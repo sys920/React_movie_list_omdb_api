@@ -1,8 +1,5 @@
 import React from 'react'
-
-
 class SelectedMovie extends React.Component {
-
 
   render() {
     return(
