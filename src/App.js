@@ -23,7 +23,7 @@ state = {
   getMovies = (e) => {
     e.preventDefault();
     if(this.state.inputQuery !=="") {
-      fetch(`http://www.omdbapi.com/?apikey=287572ed&s=${this.state.inputQuery}`)    
+      fetch(`https://www.omdbapi.com/?apikey=287572ed&s=${this.state.inputQuery}`)    
       .then(response => response.json())
       .then(data => { 
         if (data.Response !== "False") {
