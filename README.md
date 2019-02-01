@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Movie DB
+ you will be creating your own Movie Database of movies you have watched and movies you would like to watch from OMDb API ( http://www.omdbapi.com/)
+ - The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users. 
+ 
+# code 
+- ./public/index.html : run this app 
+- ./src/App.js : main source code of this App
+- ./src/Movie.js  : The movies after searching 
+- ./src/SelectedMovie.js : The movies list that you would like to watch or watched 
 
-## Available Scripts
+# Requirement 
+- You must use react router to create at least 2 pages - 1 main page, / and a search page.
+- Your main page should link to your search page and your search page should like back to your main page.
+- On your main page, you should display 2 separate lists of movies - those you want to watch and those you have already watched.
+- Each of the 2 lists should have a list title, like "Want to Watch", and the title and list should only be shown if there are movies in that list.
+- The movies displayed in the lists should show the poster and the title of the movie.
+- To add movies to the list, you must go search for them on the search page
+- Using a controlled input component, you should be able to search use the value in the input to search the OMDB API that we used in an earlier exercise.
+- If there are no results to display, indicate that not results could be found, otherwise show the first results.
+- The movie results should include the poster and the title of the movie.
+- You should have 2 buttons that allow you to add the movie to one of the 2 lists shown on the previous page, your 'Watched' movies and the movies you 'Want to Watch'. If the movie already belongs in one of these 2 lists, don't show the buttons.
+- Your app must have at least 3 components - 1 being the the main component, call it app or whatever else, in addition you should have a separate component to manage your search page and one to list each individual movie in your 'to-watch' 'already-watched' lists.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
