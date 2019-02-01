@@ -5,7 +5,6 @@ import SelectedMovie from './SelectedMovie'
 import { Route, Link } from 'react-router-dom'
 
 let currentInputQuery = "";
-const moviesEle = document.getElementById('moviesPage');
 
 class App extends Component {
 
